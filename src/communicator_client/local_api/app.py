@@ -2,7 +2,8 @@ from contextlib import asynccontextmanager
 import asyncio
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from server_connection import maintain_connection, send_message
+from communicator_client.connection.reconnect import maintain_connection
+from communicator_client.domains.messaging import send_message
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):

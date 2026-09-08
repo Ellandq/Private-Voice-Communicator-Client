@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+websockets
+pydantic
+
+[dev]
+pytest
+pytest-asyncio
+httpx

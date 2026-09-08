@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/communicator_client.egg-info/PKG-INFO
+src/communicator_client.egg-info/SOURCES.txt
+src/communicator_client.egg-info/dependency_links.txt
+src/communicator_client.egg-info/requires.txt
+src/communicator_client.egg-info/top_level.txt
+src/communicator_client/connection/__init__.py
+src/communicator_client/connection/reconnect.py
+src/communicator_client/domains/__init__.py
+src/communicator_client/domains/messaging.py
+src/communicator_client/local_api/app.py
