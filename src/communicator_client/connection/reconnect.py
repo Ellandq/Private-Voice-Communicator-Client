@@ -1,8 +1,12 @@
 import asyncio
+import os
+
 import websockets
 
 
-URI = "ws://localhost:8080/ws"
+# Inside Docker, localhost is this container — use host.docker.internal (Desktop)
+# or a Compose service name to reach a server outside it.
+URI = os.environ.get("SERVER_WS_URI", "ws://localhost:5164/ws")
 
 async def maintain_connection(app):
     """Reconnect loop; stores the live socket on app.state."""
